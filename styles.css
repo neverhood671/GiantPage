@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v7/HhyaU5sn9vOmLzloC_U.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  font-size: 14px;
+}
+
+.left_arrow_wrapper,
+.right_arrow_wrapper,
+.banner_section,
+.price_block,
+.buy_button {
+  background: linear-gradient(90deg, #fd712c 0%, #f21780 100%);
+}
+
+.list_item, .nav_button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+
+.paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #777777;
+}
+
+.author_name {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.pricing_card_header {
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.download_section_header {
+  font-family: 'Dosis', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.price {
+  font-family: 'Dosis', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.feature_name {
+  font-family: 'Dosis', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.white_section_header {
+  font-family: 'Dosis', sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+}
+
+.black_section_header {
+  font-family: 'Dosis', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.download_header {
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.banner_text_content {
+  color: #FFFFFF;
+}
+
+.feature_name,
+.dark_gray_section_header,
+.download_header,
+.buy_button {
+  color: #222222;
+}
+
+.pricing_card,
+.testimonial,
+.logo_wrapper{
+  background: #F7FAFC;
+}
+
+.separation_line {
+  color: #EEEEEE;
+}
+
+.start_free_button{
+  color: #AAAAAA
+}

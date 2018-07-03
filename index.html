@@ -4,137 +4,190 @@
 <head>
   <title>Giant</title>
   <meta charset="utf-8" /> </meta>
+  <link rel="stylesheet/less" type="text/css" href="styles.less">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.5.0-beta.4/less.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
   <header class="main_header">
-    <div class="main_logo_wrapper white_text">
-      <img alt="" src="img/logo.png" class="logo"/>
-      Giant
+    <div class="header_content_wrapper">
+      <div class="main_logo_wrapper">
+        <img alt="" src="img/logo.png" class="logo" /> Giant
+      </div>
+      <nav class="navigation">
+        <button class="home_button nav_button button">Home</button>
+        <button class="features_button nav_button button">Features</button>
+        <button class="pricing_button nav_button button">Pricing</button>
+        <button class="download_button button">Download Now</button>
+      </nav>
     </div>
-    <nav class="navigation">
-      <button class="home_button nav_button gray_text white_text button">Home</button>
-      <button class="features_button nav_button gray_text white_text button">Features</button>
-      <button class="pricing_button nav_button gray_text white_text button">Pricing</button>
-      <button class="download_button button">Download Now</button>
-    </nav>
   </header>
   <main>
     <section class="banner_section">
-      <div class="banner_text_content">
-        <h1 class="white_section_header white_text">A Powerfull & Unique App Landing Template</h1>
-        <p class="paragraph gray_text white_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <ul>
-          <li class="fa fa-check-circle block white_text"><span class="list_item gray_text white_text">Unlimited colors: banner with images, slider or video</span></li>
-          <li class="fa fa-check-circle block white_text"><span class="list_item gray_text white_text">Fully Responsive and powered by HTML5 and CSS3</span></li>
-          <li class="fa fa-check-circle block white_text"><span class="list_item gray_text white_text">Very easy to customize : set up in minutes</span></li>
-        </ul>
-        <button class="start_exploring_button button">Start Exploring Us</button>
+      <div class="banner_content">
+        <div class="banner_text_content">
+          <h1 class="banner_section_header">A Powerfull & Unique App Landing Template</h1>
+          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <ul class="list">
+            <li class="fa fa-check-circle"><span class="list_item">Unlimited colors: banner with images, slider or video</span></li>
+            <li class="fa fa-check-circle"><span class="list_item">Fully Responsive and powered by HTML5 and CSS3</span></li>
+            <li class="fa fa-check-circle"><span class="list_item">Very easy to customize : set up in minutes</span></li>
+          </ul>
+          <button class="start_exploring_button button">Start Exploring Us</button>
+        </div>
       </div>
-      <img alt="" src="img/iphones.png"/>
     </section>
 
     <section class="features_section">
-      <div class="feature_card">
-        <div class="img_wrapper"><i class="fa fa-tags pink_text"></i></div>
-        <h3 class="feature_name">Sell any product online</h3>
-        <p class="paragraph gray_text" class="feature_description"></p>
+      <div class="feature_cards">
+        <div class="feature_card">
+          <div class="img_wrapper"><i class="fa fa-tags feature_img"></i></div>
+          <div class="feature_info">
+            <h3 class="feature_name">Sell any product online</h3>
+            <div class="feature_description">
+              <p>Over 92% of computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility and even when it is it almost always leaves broken Windows Registry keys behind it. Even if you have an anti-spyware tool your Windows Registry might be broken – developers of those tools are focused on removing Adware and spyware functionality, not every trace of software itself.</p><p>Another category of software that is known to leave bits and pieces behind on uninstallation is games. There are a lot of special installation systems that creates strange files, unique entries in your registry file as well as changes system dll’s to other versions. Once you uninstall the game a lot of the special installation changes it made will be left behind, causing you problems.</p><p>You should run an advanced registry cleaner for Windows that allows you to safely scan, clean, and repair registry problems with a few simple mouse clicks on a regular basis.</p><p>Problems with the Windows Registry are a common cause of Windows crashes (blue screens) and error messages (memory as well as disk errors). By using a PC tune-up utility, your system will be more stable, your software will run quicker, and your operating system will boot faster.</p><p>Registry problems can occur for many reasons, including references left behind after uninstallation; incorrect removal of software; missing or corrupt hardware drivers; or orphaned start-up programs. With a few easy steps, a good registry cleaner will scan your entire registry for any invalid entries and provide a list of the errors found.</p><p>You then can choose to clean each item or automatically repair them all after making a backup without the need for a registry editor such as Regedit.</p><p>To help people choose a product have we created this short checklist.</p><p>A good windows registry clean and repair product should have the following options.</p><p>Automatic Scan</p><p>To facilitate your windows registry scan. This is the simplest way to clean up the registry. Automatic Scan is recommended for ‘non-technical’ users.</p><p>Custom Scans</p><p>You customize your search and scan Windows registry for particular types of errors (shared DLLs, missing fonts, invalid start-up entries, etc.).</p><p>Manual Cleanup</p><p>After the scan is complete, the program should show you a full list of errors with details, broken down by types and let you fix individual invalid entries or all invalid entries of a certain type.</p><p>Backup and Undo</p><p>Before removing an entry from your registry, should an automatic creation of a backup file be done, that can be used to undo the changes. This to avoid changes without backup.</p><p>Scheduler</p><p>To schedule the program to scan the registry whenever you start your computer.</p><p>Using software like this is not a one time fix. You must run it on a regular basis to keep your registry clean and without errors. This will help the stability and speed of windows.</p><p>We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feature_card">
+          <div class="img_wrapper"><i class="fa fa-gear feature_img"></i></div>
+          <div class="feature_info">
+            <h3 class="feature_name">Very easy to customize</h3>
+            <div class="feature_description">
+              <p>Many of us are so used to working on a computer desktop that when it comes time to purchase a new computer, we don’t consider other options. Today, computer notebooks – which were once called laptops – offer a number of advantages over a computer desktop. Here are just five reasons why you should take a second look at notebooks.</p><p>1. Mobility</p><p>You might be used to pulling up a chair to your computer, but it makes much more sense to pull your computer up to your chair. Laptops can certainly be used at your desk, but you also have the option of bringing them to the spot where you’re most comfortable. Maybe you’d like to surf the Web in the evening out in the living room or catch up on your favorite blogs before bedtime. Notebooks with wireless connectivity can travel with you throughout your home, so you can check your email or do your Internet shopping anywhere. Of course, notebooks also make sense for those who are on the go. Students can take laptops to class and to the library, while businesspeople can take them along while traveling. With WiFi so widely available, it even makes sense to have a notebook while on vacation. With the right notebook, it’s easy to take photos with your digital camera, upload them, and email them to friends and family before you even get back home. Or you can use it to write a vacation blog and include those pictures from your digital camera.</p><p>2. Better Displays</p><p>The size and quality of computer notebook displays has improved so dramatically that there’s little difference between laptops and a computer desktop. For example, you can get Apple’s MacBook with a 13.3-inch LCD widescreen (1280 x 800 pixels), a 15.4-inch LCD widescreen (1440 x 900 pixels) or a 17-inch widescreen (1680 x 1050 pixels). Similarly, the Compaq Presario has a 15.4-inch display. 3. Lighter Weight</p><p>Just a few years ago, even the lightest notebook was a pain to lug around. Today, though, laptops are increasingly easy on the back. The MacBook is slightly over an inch thick and the Toshiba Portege weighs in at about four pounds. While that’s still heavy compared to come of the new ultralight convertibles (Fujitsu’s LifeBook U810 weighs only a pound and half), it’s a significant improvement over the old seven-pound laptops. 4. Better Computing and Battery Power</p><p>Historically, two drawbacks of notebooks were their limited RAM, limited space on the hard drive, and short battery life. Times have changed, though, and laptops now have as much power under the hood as their computer desktop cousins. The MacBook, for example, has 1GB of memory (configurable up to 4 GB) and a hard drive that’s configurable to 250GB. This means that your software will hum right along and you’ll be able to zip through programs as quickly and as easily as you do on your desktop. Likewise, batteries in today’s notebooks don’t heat up and don’t conk out. 5. More Features</p><p>In older laptops, the computer’s size and weight limited the number and types of features available. Today, with smaller processors and other components, there’s room to pack more features into notebooks. For example, the MacBook has a DVD player, built-in webcam, built-in wireless capability, two USB ports and a FireWire port, built-in microphone, and audio and digital input/output.</p><p>There are so many advantages to owning notebooks that, before you buy your next computer, it’s worth your while to take one for a spin.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feature_card">
+          <div class="img_wrapper"><i class="fa fa-paint-brush feature_img"></i></div>
+          <div class="feature_info">
+            <h3 class="feature_name">Unlimited colors</h3>
+            <div class="feature_description">
+              <p>Audio player software is used to play back sound recordings in one of the many formats available for computers today. It can also play back music CDs. There is audio player software that is native to the computer’s operating system (Windows, Macintosh, and Linux) and there are web-based audio players. This article discusses the local computer audio players. Advantages of computer audio player software</p><p>The main advantage of a computer audio player is that you can play your audio CDs and there is no longer any need to have a separate CD player. However the capabilities of the computer audio player go beyond just playing traditional music CDs. You can also play sound clips in one of the many audio formats found in the information technology industry today. The MP3 format is a standard whereby a high rate of compression can be achieved on sound files allowing the ability to store large numbers of them on hard disk. Another advantage is when the computer audio player has ripping capability you can extract a sample clip from the sound track for internet posting or emailing. Audio players in the form of portable MP3 players like Apple’s iPod are extremely advantageous due to their long battery life and capability to be carried practically anywhere. Choosing and using a computer audio player</p><p>Windows comes with Windows Media Player already installed. Realplayer is a free download as well. There are other free products such as Winamp (Windows only). One important feature you want to look for when choosing an audio player beyond what is packaged with your operating system is the sound filtering capabilities. It should at least have a graphic equalizer where you can adjust for poor quality sound files. Look for other features like the ability to rip sound tracks and change the skins of the computer audio player. The demand for the computer audio player</p><p>Demand is driven by price and the free audio players like Windows Media Player will remain popular when it comes to playing audio on the computer. Where people are spending more of their money is on the portable MP3 players like Apple’s iPod. Apple makes a free computer audio player for the computer called iTunes and it is used to organize play lists and transfer sound files to the iPod player. Typically, you download iTunes and install it on your computer and then you have an integrated environment to import different types of Podcasts and audio for exporting to the iPod player itself. Plus iTunes can be used as a standalone computer audio player. But more and more you will see the demand for mobile computer audio players to increase because of their convenience and portability.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feature_card">
+          <div class="img_wrapper"><i class="fa fa-fire-extinguisher feature_img"></i></div>
+          <div class="feature_info">
+            <h3 class="feature_name">Responsive, HTML5, CSS3</h3>
+            <div class="feature_description">
+              <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery people scan bar codes with handhelds and workers in the field stay in touch with the central office via their notebooks. At home, we rely on our desktops and notebooks to do our shopping, to entertain us, and to keep us abreast of world events. We may not see our email servers, but we count on them to deliver our email whenever and wherever we want it. Our PDAs keep track of our hectic schedules, our to-do lists, our contact lists, and even entertain us with games while we’re waiting for an appointment or to board a plane. Computer hardware weaves itself through the fabric of our lives.</p><p>Even though computer hardware is central to almost everything we do, it’s easy to lag behind in the advances made in both hardware and software. Desktops that are four or five years old, for example, become obsolete. You may be able to upgrade operating systems or buy computer add-ons to extend the life of your desktop, but at some point the software, applets, and plug-ins you need to get the most out of your computer simply won’t support your old machine. If it’s time to get new computer hardware – whether desktops, notebooks, or PDAs – you’ll be amazed at the computing power and the crisp displays that are available, as well as the incredible low prices. Take some time to shop around, and you’ll soon discover that online computer hardware sources will save you money over traditional retail stores. When you think about it, it makes sense. According to logic, direct sales cut out the middleman and can pass along the savings to the consumer.</p><p>If you’re in the market for new desktops, notebooks, or PDAs, there are a myriad of choices. Here’s a rundown of some of the best systems available:</p><p>Desktops: First, you need to decide – as the advertising campaign so cleverly drives home – if you’re a Mac or if you’re a PC. If you’re a Mac, the iMac Desktop with a 20-inch display can be found for just under $1,500. That includes a 2.16 GHz Intel Core 2 Duo, 1 GB RAM, a 250 GB hard drive, and a SuperDrive. If you’re a PC, the Hewlett-Packard Pavilion S7700N Slimline Desktop PC includes an AMD Athlon Processor 3800 Plus, 1 GB RAM, 250 GB hard drive, SuperMulti DVD Drive, and Vista Premium – the new Microsoft operating system. Price? You can find it for a little over $600. Notebooks: If you love Macs, you’ll adore Apple’s PowerBook at just under $2,500. With a 15.2-inch screen at 1280 x 854 resolution and TFT widescreen display, the PowerBook gives you a lot of bang for your buck. It runs on a 1.67 GHz PowerPC G4 and 512 MB RAM, and has an 80 GB hard drive and a SuperDrive. In the PC universe, the Toshiba Satellite A135-S4427 is a perfect example of the computing power you can get at a very low price. The 15.4-inch widescreen notebook has an Intel Core Duo Processor T2250, 1 GB RAM, a 120 GB hard drive, a SuperMulti DVD drive, and Vista Premium – all for around $900. When it comes to computer hardware, it pays to shop online. Desktops, handhelds, PDAs, notebooks, servers, and even software can be found at incredibly low prices – so low that you’ll want to upgrade all of your computer hardware to the fastest, clearest, best systems available.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feature_card">
+          <div class="img_wrapper"><i class="fa fa-file-text feature_img"></i></div>
+          <div class="feature_info">
+            <h3 class="feature_name">Designed to conver</h3>
+            <div class="feature_description">
+              <p>If you are looking for a new way to promote your business that won’t cost you more money, maybe printing is one of the options you won’t resist. Printing is a widely use process in making printed materials that are used for advertising. Brochure, catalogs, flyers, banners, posters, and booklets are some of several examples of printed materials.</p><p>Nowadays, making printed materials have become fast, easy and simple. If you want your promotional material to be an eye-catching object, you should make it colored. By way of using inkjet printer this is not hard to make. An inkjet printer is any printer that places extremely small droplets of ink onto paper to create an image.</p><p>Since the introduction of inkjet printing is in the latter half of the 1980s, inkjet printers have grown in popularity and performance while dropping significantly in price.</p><p>Inkjet printers are a type of printer that works by impelling tiny droplets of liquid ink onto paper. They are the most common type of printer for the general consumer due to its low cost, high quality of output, capability of printing in vivid color, and easy of use, as I mentioned earlier.</p><p>A particular advantage of inkjet printing is that the process does not expose the material to heat or pressure. Accordingly it can be used on materials that could be damaged in lithographic or xerographic processes. For example, data or images can be added by inkjet printing to material produced on a laser printer whereas reprocessing the material in another laser printer could damage both the printer and the material.</p><p>The design and services that Inkjet Printing can do for you is an important factor that makes your advertisement really-really appealing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feature_card">
+          <div class="img_wrapper"><i class="fa fa-support feature_img"></i></div>
+          <div class="feature_info">
+            <h3 class="feature_name">With no boundaries</h3>
+            <div class="paragraph feature_description">
+              <p>Now, if you are interested in being the best player, getting really good money and knowing some tricks and advices of what to do in a live tournament games, here is the best place to learn them.</p><p>1) Try not to get drunk</p><p>Some of the people that are playing, and that have few rounds to play in the tournament don’t count the drinks they have during their games and at the very end of the day they don’t have power to continue till the last game, which is a pity to loose such a big opportunity, so, don’t drink a lot and be prepare for the last round, also come up with all your senses in order. If you drink, do it measurable and just to loose the nerves before the games but also have some other drinks like soda, water, coffee and others to hydrate your self. 2) Is it important where I sit? Yes it is, in a tournament try not to sit next to the dealer, take a place in where you will feel that you are in front of the dealer to have the feeling that he is giving you a game. Also in a place where you will feel comfortable with your self and you will have a perspective of the other players.</p><p>3) Make your self comfortable while playing</p><p>Don’t show the other players with your position what you cards are telling you. Make sure to seat back and relax, don’t adopt positions that will make you move too much or feel uncomfortable during the time of the game. Some players in the tournaments show their game with the position they adopt while playing either putting the elbows on the table or resting in the bumper. 4) Do the most important thing in the brake.</p><p>Don’t get distracted from what you really need to do in the brake. Take your time to go to the bathroom and rest, sometimes the discussions about the previous game or lines for getting drinks will waste your time for what is really important.</p><p>5) Also your words and mimic are important during the game.</p><p>When ever you are playing don’t show your cards to the other player in the way you talk or look, is important that they will have other impression, for example in your hand Is good you can try on making faces or saying words that show that your hand is not good, then people will think you have a bad game and you will surprise them at the end. This doesn’t work all the time so try to find different ways to hide your game.Also you can read the other player’s movements and words to see either they are lying or telling the truth in the hand.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="feature_card">
-        <div class="img_wrapper"><i class="fa fa-gear pink_text"></i></div>
-        <h3 class="feature_name">Very easy to customize</h3>
-        <p class="paragraph gray_text" class="feature_description"></p>
-      </div>
-      <div class="feature_card">
-        <div class="img_wrapper"><i class="fa fa-paint-brush pink_text"></i></div>
-        <h3 class="feature_name">Unlimited colors</h3>
-        <p class="paragraph gray_text" class="feature_description"></p>
-      </div>
-      <div class="feature_card">
-        <div class="img_wrapper"><i class="fa fa-fire-extinguisher pink_text"></i></div>
-        <h3 class="feature_name">Responsive, HTML5, CSS3</h3>
-        <p class="paragraph gray_text" class="feature_description"></p>
-      </div>
-      <div class="feature_card">
-        <div class="img_wrapper"><i class="fa fa-file-text pink_text"></i></div>
-        <h3 class="feature_name">Designed to conver</h3>
-        <p class="paragraph gray_text" class="feature_description"></p>
-      </div>
-      <div class="feature_card">
-        <div class="img_wrapper"><i class="fa fa-support pink_text"></i></div>
-        <h3 class="feature_name">With no boundaries</h3>
-        <p class="paragraph gray_text" class="feature_description"></p>
-      </div>
+      <div class="horizontal_line"></div>
     </section>
 
     <section class="donnot_leave_section">
-      <img alt="" src="img/iphone.png"/>
       <div class="donnot_leave_content">
-        <h2 class="dark_gray_section_header">We don’t leave you stranded</h2>
-        <p class="paragraph gray_text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
-        <p class="paragraph gray_text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill? If you’re already a developer, or a PM, or a UX designer.</p>
-        <ul>
-          <li class="fa fa-check-circle block"><span class="list_item gray_text">Unlimited colors: banner with images, slider or video</span></li>
-          <li class="fa fa-check-circle block"><span class="list_item gray_text">Fully Responsive and powered by HTML5 and CSS3</span></li>
-          <li class="fa fa-check-circle block"><span class="list_item gray_text">Very easy to customize : set up in minutes</span></li>
+        <h2 class="section_header">We don’t leave you stranded</h2>
+        <p class="paragraph">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+        <p class="paragraph">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill? If you’re already a developer, or a PM, or a UX designer.</p>
+        <ul class="list">
+          <li class="fa fa-check-circle"><span class="list_item">Unlimited colors: banner with images, slider or video</span></li>
+          <li class="fa fa-check-circle"><span class="list_item">Fully Responsive and powered by HTML5 and CSS3</span></li>
+          <li class="fa fa-check-circle"><span class="list_item">Very easy to customize : set up in minutes</span></li>
         </ul>
       </div>
     </section>
 
     <section class="screenshots_section">
-      <header class="screenshots_header">
-        <h2 class="dark_gray_section_header">Take a look at our screenshots</h2>
-        <p class="paragraph gray_text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
-      </header>
+      <div class="screenshots_content">
+        <header class="screenshots_header">
+          <h2 class="section_header">Take a look at our screenshots</h2>
+          <p class="paragraph">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+        </header>
 
-      <div class="screenshots_block">
-        <div class="left_arrow_wrapper"><i class="fa fa-long-arrow-left gray_text"></i></div>
-        <div class="screenshots">
-          <img alt="screenshot" src="img/Portfolio1.png"/>
-          <img alt="screenshot" src="img/Portfolio2.png"/>
-          <img alt="screenshot" src="img/Portfolio3.png"/>
-          <img alt="screenshot" src="img/Portfolio4.png"/>
-          <img alt="screenshot" src="img/Portfolio5.png"/>
-          <img alt="screenshot" src="img/Portfolio6.png"/>
-          <img alt="screenshot" src="img/Portfolio7.png"/>
+        <div class="screenshots_block">
+
+          <div class="arrow_wrapper">
+            <div class="left_arrow_background arrow_background"><i class="fa fa-long-arrow-left  "></i></div>
+          </div>
+          <div class="screenshots">
+            <img alt="screenshot" src="img/Screenshot1.png" class="screenshot " />
+            <img alt="screenshot" src="img/Screenshot2.png" class="screenshot " />
+            <img alt="screenshot" src="img/Screenshot3.png" class="screenshot " />
+            <img alt="screenshot" src="img/Screenshot4.png" class="screenshot " />
+            <img alt="screenshot" src="img/Screenshot5.png" class="screenshot " />
+            <img alt="screenshot" src="img/Screenshot6.png" class="screenshot " />
+            <img alt="screenshot" src="img/Screenshot7.png" class="screenshot " />
+          </div>
+          <div class="arrow_wrapper">
+            <div class="right_arrow_background arrow_background"><i class="fa fa-long-arrow-right   "></i></div>
+          </div>
+
         </div>
-        <div class="right_arrow_wrapper"><i class="fa fa-long-arrow-right white_text"></i></div>
       </div>
     </section>
 
     <section class="pricing_section">
       <header>
-        <h2 class="dark_gray_section_header">We've got the perfect package for you</h2>
-        <p class="paragraph gray_text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+        <h2 class="section_header">We've got the perfect package for you</h2>
+        <p class="paragraph">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
       </header>
       <div class="pricing_cards">
         <div class="pricing_card">
           <div class="pricing_card_header">Basic</div>
           <div class="price_block">
-            <div class="price">$12.0/m</div>
+            <div class="price"><span class="small top">$</span>12.0<span class="small bottom">/m</span></div>
           </div>
           <div class="price_description">
-            <p class="paragraph gray_text">One User</p>
-            <p class="paragraph gray_text">Multiple Access</p>
-            <p class="paragraph gray_text">SMS Support</p>
-            <p class="paragraph gray_text">24/7 Online Support</p>
+            <p class="paragraph price_description_point">One User</p>
+            <p class="paragraph price_description_point">Multiple Access</p>
+            <p class="paragraph price_description_point">SMS Support</p>
+            <p class="paragraph   price_description_point last_point">24/7 Online Support</p>
           </div>
+
           <button class="start_free_button button">Start Free Trial</button>
-          <button class="buy_button button" >Buy Now</button>
+          <button class="buy_button button">Buy Now</button>
+
         </div>
         <div class="pricing_card">
           <div class="pricing_card_header">Basic</div>
           <div class="price_block">
-            <div class="price">$12.0/m</div>
+            <div class="price"><span class="small top">$</span>12.0<span class="small bottom">/m</span></div>
           </div>
           <div class="price_description">
-            <p class="paragraph gray_text">One User</p>
-            <p class="paragraph gray_text">Multiple Access</p>
-            <p class="paragraph gray_text">SMS Support</p>
-            <p class="paragraph gray_text">24/7 Online Support</p>
+            <p class="paragraph price_description_point">One User</p>
+            <p class="paragraph price_description_point">Multiple Access</p>
+            <p class="paragraph price_description_point">SMS Support</p>
+            <p class="paragraph price_description_point last_point">24/7 Online Support</p>
+          </div>
+          <button class="start_free_button button">Start Free Trial</button>
+          <button class="buy_button button">Buy Now</button>
+        </div>
+        <div class="pricing_card">
+          <div class="pricing_card_header">Basic</div>
+          <div class="price_block price_block_hover">
+            <div class="price"><span class="small top">$</span>12.0<span class="small bottom">/m</span></div>
+          </div>
+          <div class="price_description">
+            <p class="paragraph price_description_point">One User</p>
+            <p class="paragraph price_description_point">Multiple Access</p>
+            <p class="paragraph price_description_point">SMS Support</p>
+            <p class="paragraph price_description_point last_point">24/7 Online Support</p>
           </div>
           <button class="start_free_button button">Start Free Trial</button>
           <button class="buy_button button">Buy Now</button>
@@ -142,27 +195,13 @@
         <div class="pricing_card">
           <div class="pricing_card_header">Basic</div>
           <div class="price_block">
-            <div class="price">$12.0/m</div>
+            <div class="price"><span class="small top">$</span>12.0<span class="small bottom">/m</span></div>
           </div>
           <div class="price_description">
-              <p class="paragraph gray_text">One User</p>
-              <p class="paragraph gray_text">Multiple Access</p>
-              <p class="paragraph gray_text">SMS Support</p>
-              <p class="paragraph gray_text">24/7 Online Support</p>
-          </div>
-          <button class="start_free_button button">Start Free Trial</button>
-          <button class="buy_button button">Buy Now</button>
-        </div>
-        <div class="pricing_card">
-          <div class="pricing_card_header">Basic</div>
-          <div class="price_block">
-            <div class="price">$12.0/m</div>
-          </div>
-          <div class="price_description">
-            <p class="paragraph gray_text">One User</p>
-            <p class="paragraph gray_text">Multiple Access</p>
-            <p class="paragraph gray_text">SMS Support</p>
-            <p class="paragraph gray_text">24/7 Online Support</p>
+            <p class="paragraph price_description_point">One User</p>
+            <p class="paragraph price_description_point">Multiple Access</p>
+            <p class="paragraph price_description_point">SMS Support</p>
+            <p class="paragraph price_description_point last_point">24/7 Online Support</p>
           </div>
           <button class="start_free_button button">Start Free Trial</button>
           <button class="buy_button button">Buy Now</button>
@@ -171,77 +210,103 @@
     </section>
 
     <section class="video_section">
-      <img alt="" src="img/video_preview.png"/>
-      <div class="right_arrow_wrapper"><i class="fa fa-play fa-3x white_text"></i></div>
+      <div class="proportional_hack_block"></div>
+      <div class="arrow_wrapper video_preview">
+        <div class="right_arrow_background arrow_background play">
+          <i class="fa fa-play fa-3x"></i>
+        </div>
+      </div>
     </section>
 
     <section class="testimonials_section">
       <header>
-        <h2 class="dark_gray_section_header">What our customers are saying</h2>
-        <p class="paragraph gray_text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+        <h2 class="section_header">What our customers are saying</h2>
+        <p class="paragraph">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
       </header>
       <div class="testimonials_block">
-        <div class="left_arrow_wrapper"><i class="fa fa-long-arrow-left gray_text"></i></div>
+        <div class="arrow_wrapper">
+          <div class="left_arrow_background arrow_background"><i class="fa fa-long-arrow-left"></i></div>
+        </div>
         <div class="testimonials">
           <div class="testimonial">
-            <p class="paragraph gray_text">The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.</p>
+            <p class="paragraph  ">The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.</p>
             <div class="testimonial_author">
-              <img alt="Alexandra Bullo photo" src="img/face1.png"/>
+              <div class="img_wrapper"><img alt="Alexandra Bullo photo" src="img/face1.png" class="author_photo" /></div>
               <div class="author_info">
-                <span class="author_name">Alexandra Bullo</span>
-                <p class="paragraph gray_text" class="corp">Apple Inc.</p>
+                <div>
+                  <span class="author_name">Alexandra Bullo</span>
+                  <p class="paragraph   corp">Apple Inc.</p>
+                </div>
               </div>
             </div>
           </div>
           <div class="testimonial">
-            <p class="paragraph gray_text">The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.</p>
+            <p class="paragraph  ">The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.</p>
             <div class="testimonial_author">
-              <img alt="Gary Sebastian photo" src="img/face2.png"/>
+              <div class="img_wrapper"><img alt="Gary Sebastian photo" src="img/face2.png" class="author_photo" /></div>
               <div class="author_info">
-                <span class="author_name">Gary Sebastian</span>
-                <p class="paragraph gray_text" class="corp">Apple Inc.</p>
+                <div>
+                  <span class="author_name">Gary Sebastian</span>
+                  <p class="paragraph   corp">Apple Inc.</p>
+                </div>
               </div>
             </div>
           </div>
           <div class="testimonial">
-            <p class="paragraph gray_text">The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.</p>
+            <p class="paragraph  ">The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.</p>
             <div class="testimonial_author">
-              <img alt="Samantha Bilbau photo" src="img/face3.png"/>
+              <div class="img_wrapper"><img alt="Samantha Bilbau photo" src="img/face3.png" class="author_photo" /></div>
               <div class="author_info">
-                <span class="author_name">Samantha Bilbau</span>
-                <p class="paragraph gray_text" class="corp">Apple Inc.</p>
+                <div>
+                  <span class="author_name">Samantha Bilbau</span>
+                  <p class="paragraph   corp">Apple Inc.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="right_arrow_wrapper"><i class="fa fa-long-arrow-right white_text"></i></div>
+        <div class="arrow_wrapper">
+          <div class="right_arrow_background arrow_background"><i class="fa fa-long-arrow-right   "></i></div>
+        </div>
       </div>
     </section>
 
     <section class="download_section">
-      <header class="download_section_header">
+      <header class="download_section_header ">
         Download Giant App Now
       </header>
       <div class="download_buttons">
-        <div class="download_button">
-          <div class="logo_wrapper"><i class="fa fa-apple fa-3x gray_text"></i></div>
-          <div>
-            <h3 class="download_header">Download</h3>
-            <p class="paragraph gray_text">Download from app store</p>
+        <div class="download_button download_button_big">
+          <div class="logo_wrapper">
+            <i class="fa fa-apple fa-3x os_logo"></i>
+          </div>
+          <div class="download">
+            <div>
+              <h3 class="download_header">Download</h3>
+              <p class="download_description paragraph  ">Download from app store</p>
+            </div>
           </div>
         </div>
-        <div class="download_button">
-          <div class="logo_wrapper"><i class="fa fa-android fa-3x gradient_text"></i></div>
-          <div>
-            <h3 class="download_header">Download</h3>
-            <p class="paragraph gray_text">Download from app store</p>
+        <div class="download_button download_button_big">
+          <div class="logo_wrapper">
+            <i class="fa fa-android fa-3x  os_logo"></i>
+          </div>
+          <div class="download">
+            <div>
+              <h3 class="download_header">Download</h3>
+              <p class="download_description paragraph  ">Download from app store</p>
+            </div>
           </div>
         </div>
-        <div class="download_button">
-          <div class="logo_wrapper"><i class="fa fa-windows fa-3x gray_text"></i></div>
-          <div>
-            <h3 class="download_header">Download</h3>
-            <p class="paragraph gray_text">Download from app store</p>
+        <div class="download_button download_button_big">
+          <div class="logo_wrapper">
+            <i class="fa fa-windows fa-3x   os_logo"></i>
+          </div>
+          <div class="download">
+            <div>
+              <h3 class="download_header">Download</h3>
+              <p class="download_description paragraph  ">Download from app store</p>
+            </div>
           </div>
         </div>
       </div>
@@ -251,12 +316,12 @@
 
   <footer class="main_footer">
     <div class="social_links_wrapper">
-      <i class="fa fa-facebook social_links"></i>
-      <i class="fa fa-twitter social_links"></i>
-      <i class="fa fa-dribbble social_links pink_text"></i>
-      <i class="fa fa-behance social_links"></i>
+      <i class="fa fa-facebook social_links   "></i>
+      <i class="fa fa-twitter social_links   "></i>
+      <i class="fa fa-dribbble social_links"></i>
+      <i class="fa fa-behance social_links   "></i>
     </div>
-    <p class="paragraph gray_text">Copyright © 2017  |  UXSEVEN - a sister concern of codepixar.com</p>
+    <p class="paragraph   ">Copyright © 2017 | UXSEVEN - a sister concern of codepixar.com</p>
   </footer>
 
 </body>

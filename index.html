@@ -6,10 +6,11 @@
   <meta charset="utf-8" /> </meta>
   <link rel="stylesheet/less" type="text/css" href="styles.less">
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.5.0-beta.4/less.min.js"></script>
+  <script src="action.js" async></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="addEventListeners();">
 
   <header class="main_header">
     <div class="header_content_wrapper">
@@ -17,15 +18,15 @@
         <img alt="" src="img/logo.png" class="logo" /> Giant
       </div>
       <nav class="navigation">
-        <button class="home_button nav_button button">Home</button>
-        <button class="features_button nav_button button">Features</button>
-        <button class="pricing_button nav_button button">Pricing</button>
-        <button class="download_button button">Download Now</button>
+        <a href="#home" class="home_button nav_button button">Home</a>
+        <a href="#features" class="features_button nav_button button">Features</a>
+        <a href="#price" class="pricing_button nav_button button">Pricing</a>
+        <a href="#download" class="download_button button">Download Now</a>
       </nav>
     </div>
   </header>
   <main>
-    <section class="banner_section">
+    <section class="banner_section" id="home">
       <div class="banner_content">
         <div class="banner_text_content">
           <h1 class="banner_section_header">A Powerfull & Unique App Landing Template</h1>
@@ -35,12 +36,12 @@
             <li class="fa fa-check-circle"><span class="list_item">Fully Responsive and powered by HTML5 and CSS3</span></li>
             <li class="fa fa-check-circle"><span class="list_item">Very easy to customize : set up in minutes</span></li>
           </ul>
-          <button class="start_exploring_button button">Start Exploring Us</button>
+          <a class="start_exploring_button button">Start Exploring Us</a>
         </div>
       </div>
     </section>
 
-    <section class="features_section">
+    <section class="features_section" id="features">
       <div class="feature_cards">
         <div class="feature_card">
           <div class="img_wrapper"><i class="fa fa-tags feature_img"></i></div>
@@ -117,7 +118,9 @@
       <div class="screenshots_content">
         <header class="screenshots_header">
           <h2 class="section_header">Take a look at our screenshots</h2>
-          <p class="paragraph">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+          <div class="sub_header">
+            <p class="paragraph">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+          </div>
         </header>
 
         <div class="screenshots_block">
@@ -135,17 +138,19 @@
             <img alt="screenshot" src="img/Screenshot7.png" class="screenshot " />
           </div>
           <div class="arrow_wrapper">
-            <div class="right_arrow_background arrow_background"><i class="fa fa-long-arrow-right   "></i></div>
+            <div class="arrow_background"><i class="fa fa-long-arrow-right   "></i></div>
           </div>
 
         </div>
       </div>
     </section>
 
-    <section class="pricing_section">
+    <section class="pricing_section" id="price">
       <header>
         <h2 class="section_header">We've got the perfect package for you</h2>
-        <p class="paragraph">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+          <div class="sub_header">
+            <p class="paragraph">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+          </div>
       </header>
       <div class="pricing_cards">
         <div class="pricing_card">
@@ -160,8 +165,8 @@
             <p class="paragraph   price_description_point last_point">24/7 Online Support</p>
           </div>
 
-          <button class="start_free_button button">Start Free Trial</button>
-          <button class="buy_button button">Buy Now</button>
+          <a class="start_free_button button">Start Free Trial</a>
+          <a class="buy_button button">Buy Now</a>
 
         </div>
         <div class="pricing_card">
@@ -175,22 +180,8 @@
             <p class="paragraph price_description_point">SMS Support</p>
             <p class="paragraph price_description_point last_point">24/7 Online Support</p>
           </div>
-          <button class="start_free_button button">Start Free Trial</button>
-          <button class="buy_button button">Buy Now</button>
-        </div>
-        <div class="pricing_card">
-          <div class="pricing_card_header">Basic</div>
-          <div class="price_block price_block_hover">
-            <div class="price"><span class="small top">$</span>12.0<span class="small bottom">/m</span></div>
-          </div>
-          <div class="price_description">
-            <p class="paragraph price_description_point">One User</p>
-            <p class="paragraph price_description_point">Multiple Access</p>
-            <p class="paragraph price_description_point">SMS Support</p>
-            <p class="paragraph price_description_point last_point">24/7 Online Support</p>
-          </div>
-          <button class="start_free_button button">Start Free Trial</button>
-          <button class="buy_button button">Buy Now</button>
+          <a class="start_free_button button">Start Free Trial</a>
+          <a class="buy_button button">Buy Now</a>
         </div>
         <div class="pricing_card">
           <div class="pricing_card_header">Basic</div>
@@ -203,8 +194,22 @@
             <p class="paragraph price_description_point">SMS Support</p>
             <p class="paragraph price_description_point last_point">24/7 Online Support</p>
           </div>
-          <button class="start_free_button button">Start Free Trial</button>
-          <button class="buy_button button">Buy Now</button>
+          <a class="start_free_button button">Start Free Trial</a>
+          <a class="buy_button button">Buy Now</a>
+        </div>
+        <div class="pricing_card">
+          <div class="pricing_card_header">Basic</div>
+          <div class="price_block">
+            <div class="price"><span class="small top">$</span>12.0<span class="small bottom">/m</span></div>
+          </div>
+          <div class="price_description">
+            <p class="paragraph price_description_point">One User</p>
+            <p class="paragraph price_description_point">Multiple Access</p>
+            <p class="paragraph price_description_point">SMS Support</p>
+            <p class="paragraph price_description_point last_point">24/7 Online Support</p>
+          </div>
+          <a class="start_free_button button">Start Free Trial</a>
+          <a class="buy_button button">Buy Now</a>
         </div>
       </div>
     </section>
@@ -212,7 +217,7 @@
     <section class="video_section">
       <div class="proportional_hack_block"></div>
       <div class="arrow_wrapper video_preview">
-        <div class="right_arrow_background arrow_background play">
+        <div class="arrow_background play">
           <i class="fa fa-play fa-3x"></i>
         </div>
       </div>
@@ -221,7 +226,9 @@
     <section class="testimonials_section">
       <header>
         <h2 class="section_header">What our customers are saying</h2>
-        <p class="paragraph">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+        <div class="sub_header">
+          <p class="paragraph">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+        </div>
       </header>
       <div class="testimonials_block">
         <div class="arrow_wrapper">
@@ -266,17 +273,17 @@
           </div>
         </div>
         <div class="arrow_wrapper">
-          <div class="right_arrow_background arrow_background"><i class="fa fa-long-arrow-right   "></i></div>
+          <div class="arrow_background"><i class="fa fa-long-arrow-right   "></i></div>
         </div>
       </div>
     </section>
 
-    <section class="download_section">
+    <section class="download_section" id="download">
       <header class="download_section_header ">
         Download Giant App Now
       </header>
       <div class="download_buttons">
-        <div class="download_button download_button_big">
+        <a href="" class="download_button download_button_big">
           <div class="logo_wrapper">
             <i class="fa fa-apple fa-3x os_logo"></i>
           </div>
@@ -286,8 +293,8 @@
               <p class="download_description paragraph  ">Download from app store</p>
             </div>
           </div>
-        </div>
-        <div class="download_button download_button_big">
+        </a>
+        <a href="" class="download_button download_button_big">
           <div class="logo_wrapper">
             <i class="fa fa-android fa-3x  os_logo"></i>
           </div>
@@ -297,8 +304,8 @@
               <p class="download_description paragraph  ">Download from app store</p>
             </div>
           </div>
-        </div>
-        <div class="download_button download_button_big">
+        </a>
+        <a href="" class="download_button download_button_big">
           <div class="logo_wrapper">
             <i class="fa fa-windows fa-3x   os_logo"></i>
           </div>
@@ -308,7 +315,7 @@
               <p class="download_description paragraph  ">Download from app store</p>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
 
@@ -316,12 +323,12 @@
 
   <footer class="main_footer">
     <div class="social_links_wrapper">
-      <i class="fa fa-facebook social_links   "></i>
-      <i class="fa fa-twitter social_links   "></i>
-      <i class="fa fa-dribbble social_links"></i>
-      <i class="fa fa-behance social_links   "></i>
+      <a href=""><i class="fa fa-facebook social_links   "></i></a>
+      <a href=""><i class="fa fa-twitter social_links   "></i></a>
+      <a href=""><i class="fa fa-dribbble social_links"></i></a>
+      <a href=""><i class="fa fa-behance social_links   "></i></a>
     </div>
-    <p class="paragraph   ">Copyright © 2017 | UXSEVEN - a sister concern of codepixar.com</p>
+    <p class="paragraph">Copyright © 2017 | UXSEVEN - a sister concern of codepixar.com</p>
   </footer>
 
 </body>

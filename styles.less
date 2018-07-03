@@ -20,6 +20,7 @@
 @deep_pink: #f21780;
 @light_gray: #eeeeee;
 @light_blue: #f7fafc;
+@section_header_font_size: 2.6rem;
 
 .gradient(@from: @orange, @to: @deep_pink) {
   background-color: @from;
@@ -28,18 +29,18 @@
   background-image: -o-linear-gradient(0deg, @from, @to);
   background-image: linear-gradient(90deg, @from, @to);
 }
-@media screen and (max-width:2000px) {
-  html {
-    font-size: 12px;
-  }
-
-  .banner_section {
-    background: none;
-  }
-}
 
 html {
   font-size: 14px;
+}
+
+body {
+  margin: 0;
+}
+
+.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .button {
@@ -56,12 +57,15 @@ html {
 }
 
 .paragraph {
-  font: 300 1rem 'Roboto', sans-serif;
+  font: 300 1em 'Roboto', sans-serif;
   color: @gray;
+  margin-top: 2rem;
+  display: block;
 }
 
 .list {
   padding-left: 0;
+  margin-top: 2rem;
 
   .list_item {
     padding-left: 2rem;
@@ -70,11 +74,15 @@ html {
     font-family: Roboto;
     color: @gray;
   }
+
+  .fa {
+    display: block;
+  }
 }
 
 .section_header {
   color: @dark_gray;
-  font: 500 2.6rem/2.2rem 'Dosis', sans-serif;
+  font: 500 @section_header_font_size/2.2rem 'Dosis', sans-serif;
   text-align: center;
 }
 
@@ -241,7 +249,7 @@ html {
         max-height: 4.2rem;
         overflow: hidden;
         text-align: left;
-        width: 200px;
+        max-width: 220px;
       }
     }
   }
@@ -298,8 +306,6 @@ html {
 .pricing_section {
   .paragraph {
     text-align: center;
-    color: @gray;
-    font: 300 1rem 'Roboto', sans-serif;
   }
 
   .pricing_cards {
@@ -309,18 +315,21 @@ html {
     justify-content: center;
 
     .pricing_card {
-      max-width: 262px;
+      display: block;
+      width: 262px;
+      max-height: 481px;
       text-align: center;
       margin: 1rem;
       background: @light_blue;
 
       .pricing_card_header {
+        margin: 0.5rem;
         font: 400 1.4rem/1.7rem 'Dosis', sans-serif;
         color: #333333;
       }
 
       .price_block {
-        height: 5.5rem;
+        height: 8rem;
         background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjYyIDEyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBvbHlnb24gcG9pbnRzPSIwIDAgMjYyIDAgMjYyIDgwIDEzMCAxMjAgMCA4MCIgZmlsbD0iI0ZGRkZGRiI+PC9wb2x5Z29uPgo8L3N2Zz4=");
         background-size: contain;
         background-repeat: no-repeat;
@@ -329,9 +338,15 @@ html {
         .price {
           font: 500 3.4rem 'Dosis', sans-serif;
           color: #333333;
+          padding-top: 1rem;
 
           .small {
             font-size: 1.3rem;
+          }
+
+          .top {
+            vertical-align: top;
+            line-height: 2.5;
           }
         }
       }
@@ -343,6 +358,8 @@ html {
         .price_description_point {
           border-bottom: 1px dashed #AAAAAA;
           color: @gray;
+          margin: 0;
+          padding: 0.5rem;
         }
 
         .last_point {
@@ -370,7 +387,10 @@ html {
 
       .price_block {
         background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjYyIDEyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iYSI+CjxzdG9wIHN0b3AtY29sb3I9IiNmZDcxMmMiIG9mZnNldD0iMCI+PC9zdG9wPgo8c3RvcCBzdG9wLWNvbG9yPSIjZjIxNzgwIiBvZmZzZXQ9IjEiPjwvc3RvcD4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8cG9seWdvbiBwb2ludHM9IjAgMCAyNjIgMCAyNjIgODAgMTMwIDEyMCAwIDgwIiBmaWxsPSJ1cmwoI2EpIj48L3BvbHlnb24+Cjwvc3ZnPg==");
-        color: @white;
+
+        .price {
+          color: @white;
+        }
       }
 
       .buy_button {
@@ -431,6 +451,7 @@ html {
         .testimonial_author {
           display: grid;
           grid-template-columns: auto auto;
+          margin-bottom: 1.5rem;
 
           .author_info {
             display: flex;
@@ -462,7 +483,7 @@ html {
   color: @white;
 
   .download_section_header {
-    font: 400 2.6rem 'Dosis', sans-serif;
+    font: 400 @section_header_font_size 'Dosis', sans-serif;
     text-align: center;
   }
 
@@ -545,5 +566,38 @@ html {
     .social_links_hover {
       color: @pink;
     }
+  }
+}
+@media screen and (max-width:1000px) {
+  html {
+    font-size: 18x;
+  }
+
+  .banner_section {
+    .gradient;
+    background-size: 100%;
+
+    .banner_text_content {
+      max-width: 100% !important;
+    }
+  }
+
+  .donnot_leave_section {
+    background: none;
+  }
+
+  .donnot_leave_content {
+    max-width: 100% !important;
+    margin-left: 1.5rem !important;
+  }
+
+  .social_links_wrapper {
+    .social_links {
+      font-size: 2rem;
+    }
+  }
+
+  .button {
+    display: inline-block;
   }
 }
